@@ -52,14 +52,6 @@ interface IERC1155 {
     function balanceOf(address account, uint256 id) external view returns (uint256);
 
     /**
-     * @dev Returns the URI for token type `id`.
-     *
-     * If the `\{id\}` substring is present in the URI, it must be replaced by
-     * clients with the actual token type ID.
-     */
-    function uri(uint256 id) external view returns (string memory);
-
-    /**
      * @dev xref:ROOT:erc1155.adoc#batch-operations[Batched] version of {balanceOf}.
      *
      * Requirements:
